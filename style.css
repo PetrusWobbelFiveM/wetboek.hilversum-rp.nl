@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    background-color: #010a18;
+}
+
+.app-header {
+    background: linear-gradient(110deg, #0f1c35 0%, #050b16 100%);
+    border-bottom: 1px solid #1b2947;
+}
+
+.app-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #7cc4ff;
+    margin: 0;
+}
+
+.search-wrap {
+    width: 280px;
+}
+
+#searchInput {
+    background: rgba(11, 30, 54, 0.95);
+    border: 1px solid #2e4d79;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+#searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.card-content,
+.sidebar-card {
+    border: 1px solid #1f416f;
+    background: linear-gradient(180deg, rgba(8,22,40,0.95), rgba(5,12,23,0.96));
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.category-tabs {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    background: #0a1940;
+    border: 1px solid #1d3b71;
+    color: #9ec8ff;
+    border-radius: 0.6rem;
+    padding: 0.4rem 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+    background: #1b4f97;
+    border-color: #5d96e0;
+    color: #e3f7ff;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.info-box {
+    border: 1px solid rgba(72, 111, 167, 0.8);
+    background-color: rgba(8, 24, 45, 0.85);
+    border-radius: 0.55rem;
+    padding: 12px 14px;
+    margin-top: 0.9rem;
+    color: #ffffff;
+}
+
+.card-body,
+.card-body h1,
+.card-body h2,
+.card-body h3,
+.card-body h4,
+.card-body h5,
+.card-body h6,
+.card-body p,
+.card-body li {
+    color: #ffffff !important;
+}
+.info-box h3,
+.info-box h5,
+.info-box p,
+.info-box ul,
+.info-box li {
+    color: #ffffff;
+}
+
+.article-content,
+.article-content p,
+.article-content li {
+    color: #ffffff;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    color: #bbe1ff;
+}
+
+h4 {
+    margin-top: 1rem;
+    color: #e2f4ff;
+}
+
+.article-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 76vh;
+    overflow-y: auto;
+}
+
+.article-list li {
+    margin-bottom: 0.35rem;
+}
+
+.article-list a {
+    color: #b2d4ff;
+    text-decoration: none;
+}
+
+.article-list a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.article-card {
+    border: 1px solid rgba(107, 161, 243, 0.6);
+    background: rgba(5, 12, 23, 0.76);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.article-card h5 {
+    margin-top: 0;
+    color: #9ad3ff;
+}
+
+.article-card p,
+.article-card ul {
+    margin-bottom: 0.6rem;
+}
+
+.footer {
+    background: #0d1d35;
+    border-top: 1px solid #1f3e69;
+    color: #8fb3d6;
+}
+
+@media (max-width: 991px) {
+    .search-wrap {
+        width: 100%;
+        margin-top: 0.6rem;
+    }
+
+    .app-header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .app-title {
+        font-size: 1.4rem;
+    }
+}
+
+/* Donker thema voor straftabellen */
+.article-content .table {
+    background-color: rgba(10, 20, 35, 0.95);
+    border: 1px solid rgba(55, 107, 164, 0.85);
+}
+
+.article-content .table thead th {
+    background-color: rgba(26, 53, 91, 0.85);
+    color: #ffffff;
+    border-bottom: 2px solid rgba(89, 148, 235, 0.8);
+}
+
+.article-content .table tbody td {
+    background-color: rgba(7, 17, 30, 0.85);
+    color: #d7e9ff;
+    border-top: 1px solid rgba(62, 118, 179, 0.35);
+}
+
+.article-content .table tbody tr:nth-child(odd) td {
+    background-color: rgba(5, 12, 23, 0.78);
+}
+
+.article-content .table tbody tr:hover td {
+    background-color: rgba(40, 76, 128, 0.6);
+    color: #ffffff;
+}
+
+.article-content .table th,
+.article-content .table td {
+    padding: 0.6rem 0.8rem;
+    vertical-align: middle;
+}
+
